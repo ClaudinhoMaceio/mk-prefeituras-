@@ -1,14 +1,18 @@
-const CACHE='mk360-v1';
+const CACHE='mk360-v4';
 const ASSETS=[
   '/apresentacao.html',
   '/manifest.webmanifest',
-  '/img/icon-192.png',
-  '/img/icon-512.png',
-  '/img/booth.jpg',
-  '/img/evento.jpg',
+  '/favicon.ico',
+  '/img/icon-192.ico',
+  '/img/icon-512.ico',
+  '/img/booth.jpeg',
+  '/img/evento.jpeg',
   '/img/mk-promo.jpg',
   '/img/plataforma360.jpg',
-  '/img/publico.jpg'
+  '/img/publico.jpg',
+  '/audio/slide-0.mp3','/audio/slide-1.mp3','/audio/slide-2.mp3','/audio/slide-3.mp3',
+  '/audio/slide-4.mp3','/audio/slide-5.mp3','/audio/slide-6.mp3','/audio/slide-7.mp3',
+  '/audio/slide-8.mp3','/audio/slide-9.mp3','/audio/slide-10.mp3','/audio/slide-11.mp3'
 ];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));

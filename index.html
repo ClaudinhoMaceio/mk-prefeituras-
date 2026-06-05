@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Prefeitura Digital 360 — MK Audiovisual</title>
 <meta name="description" content="Apresentação imersiva da Prefeitura Digital 360 — MK Audiovisual." />
-<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="manifest" href="manifest.webmanifest" />
 <meta name="theme-color" content="#05070d" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="MK 360" />
-<link rel="apple-touch-icon" href="/img/icon-192.png" />
-<link rel="icon" type="image/png" sizes="512x512" href="/img/icon-512.png" />
+<link rel="apple-touch-icon" href="img/icon-192.ico" />
+<link rel="icon" type="image/x-icon" sizes="512x512" href="img/icon-512.ico" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -353,7 +353,7 @@
           </div>
         </div>
         <div class="visual-card">
-          <img src="/img/plataforma360.jpg" alt="Plataforma 360 MK Audiovisual em evento" />
+          <img src="img/plataforma360.jpg" alt="Plataforma 360 MK Audiovisual em evento" />
           <div class="visual-tag"><span>PLATAFORMA 360°</span><br/>OPERAÇÃO EM CAMPO</div>
         </div>
       </div>
@@ -415,7 +415,7 @@
     <div class="slide-inner">
       <div class="two-col reverse">
         <div class="visual-card">
-          <img src="/img/evento.jpg" alt="Evento público" />
+          <img src="img/evento.jpeg" alt="Evento público" />
           <div class="visual-tag"><span>EVENTOS PÚBLICOS</span><br/>APLICAÇÃO IMEDIATA</div>
         </div>
         <div>
@@ -447,7 +447,7 @@
           </div>
         </div>
         <div class="visual-card">
-          <img src="/img/publico.jpg" alt="Público em evento" />
+          <img src="img/publico.jpg" alt="Público em evento" />
           <div class="visual-tag"><span>IDENTIDADE VISUAL</span><br/>EM CADA COMPARTILHAMENTO</div>
         </div>
       </div>
@@ -485,7 +485,7 @@
           </div>
         </div>
         <div class="visual-card">
-          <img src="/img/booth.jpg" alt="Estrutura MK Audiovisual" />
+          <img src="img/booth.jpeg" alt="Estrutura MK Audiovisual" />
           <div class="visual-tag"><span>MK AUDIOVISUAL</span><br/>ESTRUTURA COMPLETA</div>
         </div>
       </div>
@@ -572,7 +572,7 @@
   }
 
   function loadAudio(i){
-    audio.src='/api/public/narrate?slide='+i+'&v=1';
+    audio.src='audio/slide-'+i+'.mp3';
     audio.load();
   }
 
